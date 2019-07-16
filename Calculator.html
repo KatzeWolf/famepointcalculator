@@ -1,1 +1,42 @@
-<iframe width="1500" height="900" frameborder="0" scrolling="no" align="center" src="https://onedrive.live.com/embed?resid=25C8D3E72BD39D4%21110&authkey=%21AG4RIWGxPQ4FR8M&em=2&wdAllowInteractivity=False&AllowTyping=True&Item='Calculator'!A1%3AJ34&wdHideGridlines=True&wdInConfigurator=True"></iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div#load_screen
+      {
+          background: powderblue;
+          opacity: 1;
+          position: fixed;
+          z-index:10;
+          top: 0px;
+          width: 100%;
+          height: 1600px;
+      }
+      div#load_screen > div#loading
+      {
+          color:black;
+          width:120px;
+          height:24px;
+          margin: 300px auto;
+		  font-size: 50px;
+		  aligh: center;
+      }
+    </style>
+	<script>
+		window.addEventListener("load", function(){
+		var load_screen = document.getElementById("load_screen");
+		document.body.removeChild(load_screen);
+		});
+	</script>
+  </head>
+	<body>
+		<body style="background-color:powderblue;">
+		<div id="load_screen"><div id="loading">loading...</div></div>
+	<br>
+		<center><h1>Fire Trail Fame point calculator</h1></center>
+		<div align="center">
+			<br>
+			<iframe width="1025" height="800" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=25C8D3E72BD39D4%21110&authkey=%21AG4RIWGxPQ4FR8M&em=2&wdAllowInteractivity=False&AllowTyping=True&Item='Calculator'!A1%3AJ34&wdHideGridlines=True&wdInConfigurator=True"></iframe>
+		</div>
+	</body>
+</html>
